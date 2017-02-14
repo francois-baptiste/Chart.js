@@ -3,7 +3,7 @@
 
 <head>
 	<title>Line Chart with Custom Tooltips</title>
-	<script src="../../dist/Chart.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
 	<script src="../utils.js"></script>
 	<style>
 		canvas{
@@ -85,7 +85,7 @@
 					var colors = tooltip.labelColors[i];
 					var style = 'background:' + colors.backgroundColor;
 					style += '; border-color:' + colors.borderColor;
-					style += '; border-width: 2px'; 
+					style += '; border-width: 2px';
 					var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
 					innerHtml += '<tr><td>' + span + body + '</td></tr>';
 				});
@@ -115,12 +115,12 @@
 				pointBackgroundColor: window.chartColors.red,
 				fill: false,
 				data: [
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
 					randomScalingFactor()
 				]
 			}, {
@@ -129,12 +129,12 @@
 				pointBackgroundColor: window.chartColors.blue,
 				fill: false,
 				data: [
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
-					randomScalingFactor(), 
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
 					randomScalingFactor()
 				]
 			}]

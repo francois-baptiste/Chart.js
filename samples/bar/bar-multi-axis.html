@@ -3,7 +3,7 @@
 
 <head>
     <title>Bar Chart Multi Axis</title>
-    <script src="../../dist/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
     <script src="../utils.js"></script>
     <style>
     canvas {
@@ -35,12 +35,12 @@
             ],
             yAxisID: "y-axis-1",
             data: [
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
                 randomScalingFactor()
             ]
         }, {
@@ -48,12 +48,12 @@
             backgroundColor: window.chartColors.grey,
             yAxisID: "y-axis-2",
             data: [
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
-                randomScalingFactor(), 
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
                 randomScalingFactor()
             ]
         }]
@@ -63,7 +63,7 @@
         var ctx = document.getElementById("canvas").getContext("2d");
         window.myBar = new Chart(ctx, {
             type: 'bar',
-            data: barChartData, 
+            data: barChartData,
             options: {
                 responsive: true,
                 title:{
